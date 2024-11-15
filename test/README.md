@@ -4,4 +4,12 @@ npm install
 
 npm run build
 
-npm start testcases/arrays.pas
+npm start -- testcases/arrays.pas
+
+mkdir tmp
+
+npm start -- testcases/arrays.pas --compile 
+
+npm install -g @irongeek/wabt
+
+wasm2wat tmp/compiled.wasm -o test/arrays.wat
