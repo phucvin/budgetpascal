@@ -17,3 +17,7 @@ wasm2wat tmp/compiled.wasm -o test/arrays.wat
 npm start -- testcases/records.pas --compile 
 
 wasm2wat tmp/compiled.wasm -o test/records.wat
+
+npm start -- test/fib01.pas --compile 
+
+wasm2wat tmp/compiled.wasm -o test/fib01.wat
